@@ -7,7 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#AEE0C5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
     </Grid>
 </Page>
