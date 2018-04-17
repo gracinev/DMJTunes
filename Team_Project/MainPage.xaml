@@ -21,6 +21,17 @@
             <RowDefinition Height="75" />
             <RowDefinition />
         </Grid.RowDefinitions>
+        <Rectangle Fill="#CBEAEB"
+                   Grid.ColumnSpan="3" />
+        <StackPanel Orientation="Horizontal">
+            <Image Source="Assets/Music.png" />
+            <TextBlock Text="DMJ TUNES"
+                       FontSize="70"
+                       VerticalAlignment="Center"
+                       Margin="30"
+                       FontFamily="Rockwell" />
+        </StackPanel>
+        
 
     </Grid>
 </Page>
