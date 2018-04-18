@@ -8,5 +8,16 @@ namespace Team_Project
 {
     class Login
     {
+        public HashSet<string> LoginInfo = new HashSet<string>();
+
+        public void ValidateInput()
+        {
+
+        }
+
+        public void AddNewAccount()
+        {
+
+        }
     }
 }
