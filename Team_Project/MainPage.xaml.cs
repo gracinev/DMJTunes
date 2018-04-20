@@ -32,5 +32,11 @@ namespace Team_Project
             this.Frame.Navigate(typeof(Register));
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if ()
+
+        }
     }
 }

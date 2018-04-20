@@ -10,7 +10,7 @@ namespace Team_Project
 {
     class Login
     {
-        public Dictionary<string, string> LoginInfo = new Dictionary<string, string>();
+        public static Dictionary<string, string> LoginInfo = new Dictionary<string, string>();
 
         public void ValidateInput()
         {
