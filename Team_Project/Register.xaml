@@ -23,14 +23,15 @@
         </Grid.RowDefinitions>
         <Rectangle Fill="#CBEAEB"
                    Grid.ColumnSpan="3" />
-        <StackPanel Orientation="Horizontal">
-            <Image Source="Assets/Music.png" Margin="20"/>
-            <TextBlock Text="DMJ TUNES"
+        <HyperlinkButton Click="HyperlinkButton_Click" 
+                         Margin="10" 
+                         Content="Back to Login Page" 
+                         VerticalAlignment="Top"/>
+        <TextBlock Text="DMJ TUNES"
                        FontSize="70"
                        VerticalAlignment="Center"
                        Margin="30"
                        FontFamily="Rockwell" />
-        </StackPanel>
         <TextBlock Grid.Row="1"
                    Text="Register"
                    FontSize="60"
