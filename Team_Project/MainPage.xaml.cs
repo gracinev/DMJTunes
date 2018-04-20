@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -35,7 +36,25 @@ namespace Team_Project
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if ()
+            if (Login.LoginInfo.ContainsKey(username.Text))
+            {
+                if (Login.LoginInfo[username.Text] == password.Password)
+                {
+                    // Change the message dialog to page navigation!
+                    MessageDialog message = new MessageDialog($"Welcome {username}!");
+                    message.ShowAsync();
+                }
+                else
+                {
+                    MessageDialog message = new MessageDialog("Invalid password. Please try again.");
+                    message.ShowAsync();
+                }
+            }
+            else
+            {
+                MessageDialog message = new MessageDialog($"{username} not found. Try another username or register for an account.");
+                message.ShowAsync();
+            }
 
         }
     }
