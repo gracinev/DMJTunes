@@ -8,7 +8,7 @@ namespace Team_Project
 {
     class Login
     {
-        public HashSet<string> LoginInfo = new HashSet<string>();
+        public Dictionary<string, string> LoginInfo = new Dictionary<string, string>();
 
         public void ValidateInput()
         {
