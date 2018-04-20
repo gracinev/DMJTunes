@@ -25,12 +25,36 @@ namespace Team_Project
         public Register()
         {
             this.InitializeComponent();
+            btnRegister.IsEnabled = false;
         }
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
 
+        }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckForNull()
+        {
+            if (!string.IsNullOrWhiteSpace(username.Text) && !string.IsNullOrWhiteSpace(password.Password))
+            {
+                btnRegister.IsEnabled = true;
+            }
+        }
+
+        private void username_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            CheckForNull();
+        }
+
+        private void password_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            CheckForNull();
         }
     }
 }
