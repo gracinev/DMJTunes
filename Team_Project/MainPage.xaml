@@ -78,7 +78,8 @@
                     Height="50"
                     Foreground="White"
                     Background="#6799A3"
-                    Margin="20" />
+                    Margin="20" 
+                    Click="Button_Click"/>
         </StackPanel>
 
 
