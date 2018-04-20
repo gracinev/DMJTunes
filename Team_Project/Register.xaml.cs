@@ -22,6 +22,7 @@ namespace Team_Project
     /// </summary>
     public sealed partial class Register : Page
     {
+        Login login = new Login();
         public Register()
         {
             this.InitializeComponent();
@@ -36,7 +37,7 @@ namespace Team_Project
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-
+            login.ValidateInfo(username.Text, password.Password);
         }
 
         private void CheckForNull()
