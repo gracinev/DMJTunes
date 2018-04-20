@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using Windows.UI.Popups;
 
 namespace Team_Project
 {
@@ -24,6 +25,22 @@ namespace Team_Project
             string[] info = { $"Username: {username}", $"Password: {password}" };
 
             await FileIO.AppendLinesAsync(loginInfoFile, info);
+        }
+
+        public void ValidateInfo(string username, string password)
+        {
+            if (!LoginInfo.ContainsKey(username))
+            {
+                LoginInfo.Add(username, password);
+                WriteLoginInfoToFile(username, password);
+                MessageDialog message = new MessageDialog($"{username} was successfully added!");
+                message.ShowAsync();
+            }
+            else
+            {
+                MessageDialog message = new MessageDialog($"{username} already exists!");
+                message.ShowAsync();
+            }
         }
     }
 }
