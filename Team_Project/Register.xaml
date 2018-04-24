@@ -27,11 +27,13 @@
                          Margin="10" 
                          Content="Back to Login Page" 
                          VerticalAlignment="Top"/>
-        <TextBlock Text="DMJ TUNES"
+        <StackPanel Orientation="Horizontal">
+            <Image Source="Assets/music.png" Margin="45" />
+            <TextBlock Text="DMJ TUNES"
                        FontSize="70"
                        VerticalAlignment="Center"
-                       Margin="30"
                        FontFamily="Rockwell" />
+        </StackPanel>
         <TextBlock Grid.Row="1"
                    Text="Register"
                    FontSize="60"

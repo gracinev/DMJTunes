@@ -41,7 +41,7 @@ namespace Team_Project
                 if (Login.LoginInfo[username.Text] == password.Password)
                 {
                     // Change the message dialog to page navigation!
-                    MessageDialog message = new MessageDialog($"Welcome {username}!");
+                    MessageDialog message = new MessageDialog($"Welcome {username.Text}!");
                     message.ShowAsync();
                 }
                 else
@@ -52,7 +52,7 @@ namespace Team_Project
             }
             else
             {
-                MessageDialog message = new MessageDialog($"{username} not found. Try another username or register for an account.");
+                MessageDialog message = new MessageDialog($"{username.Text} not found. Try another username or register for an account.");
                 message.ShowAsync();
             }
 
