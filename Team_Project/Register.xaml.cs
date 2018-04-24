@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -37,25 +39,68 @@ namespace Team_Project
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-            login.ValidateInfo(username.Text, password.Password);
+            error.Visibility = Visibility.Collapsed;
+            if (login.ValidateInfo(username.Text, password.Password) == false)
+            {
+                error.Visibility = Visibility.Visible;
+                error.Text = $"{username.Text} already exists. Please try another username.";
+            }  
+            else
+            {
+                login.ValidateInfo(username.Text, password.Password);
+                username.Text = "";
+                password.Password = "";
+            }
         }
 
-        private void CheckForNull()
+        private bool RegistrationValidation(string validate)
         {
-            if (!string.IsNullOrWhiteSpace(username.Text) && !string.IsNullOrWhiteSpace(password.Password))
+            btnRegister.IsEnabled = false;
+            if (!string.IsNullOrWhiteSpace(validate))
             {
-                btnRegister.IsEnabled = true;
+                return true;
+            }
+            else
+            {
+                error.Visibility = Visibility.Visible;
+                error.Text = "Please enter a valid username and/or password";
+                return false;
             }
         }
 
         private void username_TextChanged(object sender, TextChangedEventArgs e)
         {
-            CheckForNull();
+            password.IsEnabled = false;
+            btnRegister.IsEnabled = false;
+            if (RegistrationValidation(username.Text) == false)
+            {
+                usernameValidation.DisplayValidation(false);
+                error.Text = "Please enter a valid username";
+            }
+            else
+            {
+                error.Visibility = Visibility.Collapsed;
+                usernameValidation.DisplayValidation(true);
+                password.IsEnabled = true;
+            }
         }
 
         private void password_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            CheckForNull();
+            btnRegister.IsEnabled = false;
+            RegistrationValidation(password.Password);
+            if (password.Password.Length < 8 || RegistrationValidation(password.Password) == false)
+            {
+                error.Visibility = Visibility.Visible;
+                error.Text = "Enter a password that is greater than 8 characters";
+                passwordValidation.DisplayValidation(false);
+            }
+            else
+            {
+                passwordValidation.DisplayValidation(true);
+                error.Visibility = Visibility.Collapsed;
+                btnRegister.IsEnabled = true;
+            }
         }
     }
 }

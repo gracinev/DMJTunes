@@ -104,6 +104,9 @@
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Validation.xaml.cs">
+      <DependentUpon>Validation.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -112,8 +115,10 @@
     <None Include="Team_Project_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\check.png" />
     <Content Include="Assets\Drake.png" />
     <Content Include="Assets\EdSheeran.jpg" />
+    <Content Include="Assets\error.png" />
     <Content Include="Assets\FOB.jpg" />
     <Content Include="Assets\Mozart.jpg" />
     <Content Include="Assets\music.png" />
@@ -138,6 +143,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Register.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Validation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

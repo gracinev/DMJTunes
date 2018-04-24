@@ -12,14 +12,14 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition />
             <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="75"/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="75" />
+            <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
         <Rectangle Fill="#CBEAEB"
@@ -59,17 +59,36 @@
         <TextBox x:Name="username"
                 Grid.Row="2"
                  Grid.Column="1"
-                 Grid.ColumnSpan="3"
+                 Grid.ColumnSpan="2"
                  FontSize="40"
                  Margin="0,0,20,0" 
                  TextChanged="username_TextChanged"/>
         <PasswordBox x:Name="password"
-                    Grid.Row="4"
+                     Grid.Row="4"
                      Grid.Column="1"
-                     Grid.ColumnSpan="3"
+                     Grid.ColumnSpan="2"
                      FontSize="30"
                      Margin="0,0,20,0" 
                      PasswordChanged="password_PasswordChanged"/>
+        <local:Validation x:Name="usernameValidation"
+                          Grid.Column="3"
+                          Grid.Row="2"/>
+        <local:Validation x:Name="passwordValidation"
+                          Grid.Column="3"
+                          Grid.Row="4"/>
+        <TextBlock x:Name="error"
+                   Grid.Column="1"
+                   Grid.Row="5"
+                   Grid.ColumnSpan="2"
+                   Text="" 
+                   Height="50" 
+                   HorizontalAlignment="Left"
+                   FontSize="20"
+                   VerticalAlignment="Top"
+                   Margin="20"
+                   Foreground="Red"
+                   FontWeight="SemiBold"
+                   Visibility="Collapsed"/>
         <Button x:Name="btnRegister"
                     Content="Register"
                     Grid.Row="5" 
@@ -82,7 +101,5 @@
                     Background="#6799A3"
                     Margin="20" 
                     Click="btnRegister_Click"/>
-
-
     </Grid>
 </Page>
