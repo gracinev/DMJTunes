@@ -43,17 +43,23 @@ namespace Team_Project
                     // Change the message dialog to page navigation!
                     MessageDialog message = new MessageDialog($"Welcome {username.Text}!");
                     message.ShowAsync();
+                    username.Text = "";
+                    password.Password = "";
                 }
                 else
                 {
                     MessageDialog message = new MessageDialog("Invalid password. Please try again.");
                     message.ShowAsync();
+                    username.Text = "";
+                    password.Password = "";
                 }
             }
             else
             {
                 MessageDialog message = new MessageDialog($"{username.Text} not found. Try another username or register for an account.");
                 message.ShowAsync();
+                username.Text = "";
+                password.Password = "";
             }
 
         }
