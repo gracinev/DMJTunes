@@ -22,14 +22,22 @@ namespace Team_Project
    /// </summary>
    public sealed partial class AlbumPage : Page
    {
+      public List<Artist> artist_list { get; set; }
       public AlbumPage()
       {
          this.InitializeComponent();
+         artist_list = Artist.AllArtists();
+        
       }
+     
 
-      private void InitializeComponent()
-      {
-         throw new NotImplementedException();
-      }
+      
+      
+
+
+    
+      
+
+      
    }
 }

@@ -39,79 +39,31 @@
          
        />
       <Rectangle Fill="AntiqueWhite" Grid.RowSpan="5" />
+      <StackPanel Grid.Column="0" Grid.RowSpan="4">
+         <ListView Margin="11,64,-1.667,-3141" Height="3509">
 
-        <ListView Margin="20,64,-2673,-3141" Grid.ColumnSpan="4" Grid.RowSpan="5">
-            <ListView.ItemTemplate>
-                <ListViewItem Foreground="#3F5F6B" Content="Top Songs of 2018" FontSize="37" FontWeight="ExtraBold" />
-                <ListViewItem Foreground="#3F5F6B" Content="All the Stars" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Grown" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Just for Us" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Party Here" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Hand It Over" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="No Tears Left to Cry" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Meant to Be" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Wake Me Up" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Whatever It Takes" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="You Make It Easy" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="God's Plan" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Ready for it" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Love Story" FontSize="30"/>
-                <ListViewItem Foreground="#3F5F6B" Content="Never Be the Same" FontSize="30"/>
-            </ListView.ItemTemplate>
-        </ListView>
+            <ListViewItem Foreground="#3F5F6B" Content="Top Songs of 2018" FontSize="37" FontWeight="ExtraBold" />
+            <ListViewItem Foreground="#3F5F6B" Content="All the Stars" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Grown" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Just for Us" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Party Here" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Hand It Over" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="No Tears Left to Cry" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Meant to Be" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Wake Me Up" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Whatever It Takes" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="You Make It Easy" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="God's Plan" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Ready for it" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Love Story" FontSize="30"/>
+            <ListViewItem Foreground="#3F5F6B" Content="Never Be the Same" FontSize="30"/>
 
+         </ListView>
+      </StackPanel>
+      <ListView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind artist_list}">
+         
 
-      <Image Source="assets/edSheeranalbum.jpg" Margin="30,3,0,0"
-             Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Height="170" />
-      <TextBlock Text="Ed Sheeran" Margin="250,83,0,0" Grid.Column="1" Grid.Row="1"
-                  HorizontalAlignment="Left" FontSize="30" FontFamily="Rockwell"/>
-      <HyperlinkButton Content="Divide" Margin="250,0,0,0" Grid.Column="1" Grid.Row="1"
-                  HorizontalAlignment="Left" FontSize="20" FontFamily="Rockwell"/>
-
-      <Image Source="assets/drake-views-cover.jpg" Margin="30,23,0,0" Grid.Column="1"
-               Grid.Row="1" HorizontalAlignment="Right" Height="165"/>
-      <TextBlock Text="Drake" Margin="40,83,0,0" Grid.Column="2" Grid.Row="1"
-                  HorizontalAlignment="Left" FontSize="30" FontFamily="Rockwell"/>
-      <HyperlinkButton Content="Views" Margin="40,0,0,0" Grid.Column="2" Grid.Row="1"
-                  HorizontalAlignment="Left" FontSize="20" FontFamily="Rockwell"/>
-
-      <Image Source="assets/SamSmithAlbum.jpg" Margin="30,400,50,50"
-            Grid.Column="1" Grid.RowSpan="5" Height="165" HorizontalAlignment="Left" />
-
-      <TextBlock Text="Sam Smith" Margin="220,30,0,0" Grid.Column="1" Grid.Row="2"
-                  HorizontalAlignment="Left" FontSize="30" FontFamily="Rockwell"/>
-      <HyperlinkButton Content="Thrill of it All" Margin="40,300,250,0" Grid.Column="1" Grid.RowSpan="5"
-                  HorizontalAlignment="Center" FontSize="20" FontFamily="Rockwell" VerticalAlignment="Center"
-                  />
-
-      <Image Source="assets/b42799fc9d79e93c4f36253dca94fb29.jpg" Grid.Column="1" Grid.RowSpan="5" 
-               Height="156" Margin="0,350,0,0" HorizontalAlignment="Right"/>
-
-      <TextBlock Text="Mozart" Margin="100,30,280,0" Grid.ColumnSpan="4" Grid.Row="2"
-                  HorizontalAlignment="Right" FontSize="30" FontFamily="Rockwell"/>
-      <HyperlinkButton Content="The Mozart Collection" Margin="20,300,170,0" Grid.ColumnSpan="4" Grid.RowSpan="5"
-                  HorizontalAlignment="Right" FontSize="20" FontFamily="Rockwell" VerticalAlignment="Center"
-                  />
-                
-      <Image Source="assets/falloutboyAlbum.jpg" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Height="170"
-            Margin="30,50,0,0"/>
-
-      <TextBlock Text="Fallout Boy" Margin="50,0,380,80" Grid.Column="1"  Grid.Row="4"
-                  HorizontalAlignment="Right" FontSize="30" FontFamily="Rockwell" VerticalAlignment="Center"/>
-      <HyperlinkButton Content="Save Rock and Roll" Margin="220,690,170,0" Grid.Column="1" Grid.RowSpan="5"
-                  HorizontalAlignment="Left" FontSize="20" FontFamily="Rockwell" VerticalAlignment="Center"
-                  />
-
-      <Image Source="assets/tupacAlbum.jpg" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right"
-            Height="165" Margin="0,40,0,0"/>
-
-      <TextBlock Text="Tupac" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" FontSize="30"
-            FontFamily="Rockwell" Margin="40,0,0,80"/>
-
-      <HyperlinkButton Content="All Eyes on me" Grid.Column="2" Grid.Row="4"  Margin="40,0,20,20" FontSize="20"
-            FontFamily="Rockwell"/>
-
-
+      </ListView>
 
 
    </Grid>
