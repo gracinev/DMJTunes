@@ -40,7 +40,8 @@
        />
       <Rectangle Fill="AntiqueWhite" Grid.RowSpan="5" />
 
-        <ListView x:Name="MainListView" Margin="20,64,-2673,-3141" ItemClick="ListView_ItemClick">
+        <ListView Margin="20,64,-2673,-3141" Grid.ColumnSpan="4" Grid.RowSpan="5">
+            <ListView.ItemTemplate>
                 <ListViewItem Foreground="#3F5F6B" Content="Top Songs of 2018" FontSize="37" FontWeight="ExtraBold" />
                 <ListViewItem Foreground="#3F5F6B" Content="All the Stars" FontSize="30"/>
                 <ListViewItem Foreground="#3F5F6B" Content="Grown" FontSize="30"/>
@@ -56,6 +57,7 @@
                 <ListViewItem Foreground="#3F5F6B" Content="Ready for it" FontSize="30"/>
                 <ListViewItem Foreground="#3F5F6B" Content="Love Story" FontSize="30"/>
                 <ListViewItem Foreground="#3F5F6B" Content="Never Be the Same" FontSize="30"/>
+            </ListView.ItemTemplate>
         </ListView>
 
 
