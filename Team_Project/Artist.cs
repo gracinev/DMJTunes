@@ -18,7 +18,7 @@ namespace Moive_Databinding_G1
 
         public Artist()
         {
-
+            //Test comment
         }
         public Artist(string Name, string Description, string AlbumName, DateTime Date, string imageFilename)
         {
