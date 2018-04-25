@@ -67,7 +67,14 @@ namespace Team_Project
 
         private void username_TextChanged(object sender, TextChangedEventArgs e)
         {
-            password.IsEnabled = true;
+            if (username.Text.Length < 1)
+            {
+                password.IsEnabled = false;
+            }
+            else
+            {
+                password.IsEnabled = true;
+            }
         }
 
         private void password_PasswordChanged(object sender, RoutedEventArgs e)
