@@ -92,6 +92,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AlbumPage.xaml.cs">
+      <DependentUpon>AlbumPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -115,11 +118,16 @@
     <None Include="Team_Project_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\b42799fc9d79e93c4f36253dca94fb29.jpg" />
     <Content Include="Assets\check.png" />
+    <Content Include="Assets\drake-views-cover.jpg" />
     <Content Include="Assets\Drake.png" />
     <Content Include="Assets\EdSheeran.jpg" />
+    <Content Include="Assets\edSheeranalbum.jpg" />
     <Content Include="Assets\error.png" />
+    <Content Include="Assets\falloutboyAlbum.jpg" />
     <Content Include="Assets\FOB.jpg" />
+    <Content Include="Assets\marianastrenchalbum.JPG" />
     <Content Include="Assets\Mozart.jpg" />
     <Content Include="Assets\music.png" />
     <Content Include="Assets\SamSmith.jpg" />
@@ -138,6 +146,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AlbumPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
