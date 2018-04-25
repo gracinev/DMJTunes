@@ -60,7 +60,7 @@
 
          </ListView>
       </StackPanel>
-      <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}">
+      <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}" DoubleTapped="album_list_view_DoubleTapped">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="local:Artist">
                     <StackPanel>

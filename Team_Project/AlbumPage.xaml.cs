@@ -30,9 +30,9 @@ namespace Team_Project
         
       }
 
-      private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
-      {
+        private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
 
-      }
-   }
+        }
+    }
 }
