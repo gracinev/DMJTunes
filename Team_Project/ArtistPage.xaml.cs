@@ -26,6 +26,7 @@ namespace Team_Project
         public ArtistPage()
         {
             this.InitializeComponent();
+            Artists = Artist.AllArtists();
         }
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
