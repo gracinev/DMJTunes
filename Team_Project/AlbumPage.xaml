@@ -40,24 +40,22 @@
        />
       <Rectangle Fill="AntiqueWhite" Grid.RowSpan="5" />
 
-        <ListView Margin="20,64,-2673,-3141" Grid.ColumnSpan="4" Grid.RowSpan="5">
-            <ListView.ItemTemplate>
+        <ListView Margin="20,64,-2673,-3141" IsItemClickEnabled="False">
                 <ListViewItem Foreground="#3F5F6B" Content="Top Songs of 2018" FontSize="37" FontWeight="ExtraBold" />
-                    <ListViewItem Foreground="#3F5F6B" Content="All the Stars" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Grown" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Just for Us" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Party Here" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Hand It Over" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="No Tears Left to Cry" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Meant to Be" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Wake Me Up" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Whatever It Takes" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="You Make It Easy" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="God's Plan" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Ready for it" FontSize="30"/>
-                    <ListViewItem Foreground="#3F5F6B" Content="Love Story" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="All the Stars" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Grown" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Just for Us" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Party Here" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Hand It Over" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="No Tears Left to Cry" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Meant to Be" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Wake Me Up" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Whatever It Takes" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="You Make It Easy" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="God's Plan" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Ready for it" FontSize="30"/>
+                <ListViewItem Foreground="#3F5F6B" Content="Love Story" FontSize="30"/>
                 <ListViewItem Foreground="#3F5F6B" Content="Never Be the Same" FontSize="30"/>
-            </ListView.ItemTemplate>
         </ListView>
 
 
