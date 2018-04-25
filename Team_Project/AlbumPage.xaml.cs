@@ -29,15 +29,10 @@ namespace Team_Project
          artist_list = Artist.AllArtists();
         
       }
-     
 
-      
-      
+      private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+      {
 
-
-    
-      
-
-      
+      }
    }
 }
