@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Team_Project.Divide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Team_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+   <Grid Background="#AEE0C5">
+      <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="373" />
+         <ColumnDefinition Width="736.334"/>
+         <ColumnDefinition Width="131*"/>
+         <ColumnDefinition Width="130*" />
+
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+         <RowDefinition />
+         <RowDefinition />
+         <RowDefinition Height="75"/>
+         <RowDefinition Height="75"/>
+         <RowDefinition />
+      </Grid.RowDefinitions>
+      <Rectangle Fill="#CBEAEB"
+                   Grid.ColumnSpan="4" Margin="0,0,0,0.333" />
+      <StackPanel Orientation="Horizontal" Margin="0,0,0.334,0.333" Grid.ColumnSpan="2">
+         <Image Source="Assets/Music.png" Margin="380,30,50,0"/>
+         <TextBlock Text="DMJ TUNES"
+                       FontSize="70"
+                       Margin="9.667,0,38.333,0"
+                       FontFamily="Rockwell" Height="199" />
+
+      </StackPanel>
+      <TextBlock 
+         Text="Ideal Tunes for you" Foreground="Black" 
+         FontSize="40" TextAlignment="Right" Margin="0,120,0.334,0.333"
+         Grid.Row="0" FontFamily="Rockwell" Grid.ColumnSpan="2"
+       />
+      <Image Source="assets/SamSmithAlbum.jpg" Grid.Row="1" />
+      <TextBlock Text="Bio" FontSize="30" Grid.Column="1" Grid.Row="1" FontWeight="Bold"/>
+      <TextBlock Text="Sam Smith is the best artist alive!! His voice is the voice of angels :)" Grid.Column="1"
+               Grid.Row="1" Margin="0,50,70,0"/>
+      <TextBlock Text="Top Songs" FontSize="30" Grid.Column="1" Grid.Row="2" FontWeight="Bold"/>
+      <Button Content="Back to Albums" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+   </Grid>
+</Page>
