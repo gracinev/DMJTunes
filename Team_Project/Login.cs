@@ -22,7 +22,7 @@ namespace Team_Project
             await FileIO.AppendLinesAsync(loginInfoFile, info);
         }
 
-        public bool ValidateInfo(string username, string password)
+        public void ValidateInfo(string username, string password)
         {
             if (!LoginInfo.ContainsKey(username))
             {
@@ -30,13 +30,11 @@ namespace Team_Project
                 WriteLoginInfoToFile(username, password);
                 MessageDialog message = new MessageDialog($"{username} was successfully added!");
                 message.ShowAsync();
-                return true; 
             }
             else
             {
-                //MessageDialog message = new MessageDialog($"{username} already exists!");
-                //message.ShowAsync();
-                return false;
+                MessageDialog message = new MessageDialog($"{username} already exists!");
+                message.ShowAsync();
             }
         }
     }

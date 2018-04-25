@@ -27,6 +27,7 @@ namespace Team_Project
         {
             this.InitializeComponent();
             password.IsEnabled = false;
+            login.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -68,6 +69,11 @@ namespace Team_Project
         private void username_TextChanged(object sender, TextChangedEventArgs e)
         {
             password.IsEnabled = true;
+        }
+
+        private void password_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            login.IsEnabled = true;
         }
     }
 }

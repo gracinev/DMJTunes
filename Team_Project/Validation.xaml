@@ -10,7 +10,13 @@
     d:DesignWidth="400">
 
     <Grid>
-        <Image x:Name="check" Source="Assets/Check.png" Height="50" Width="50" />
-        <Image x:Name="error" Source="Assets/Error.png" Height="50" Width="50"/>
+        <Image x:Name="check" 
+               Source="Assets/Check.png" 
+               Height="50" 
+               Width="50" />
+        <Image x:Name="error" 
+               Source="Assets/Error.png" 
+               Height="50" 
+               Width="50"/>
     </Grid>
 </UserControl>
