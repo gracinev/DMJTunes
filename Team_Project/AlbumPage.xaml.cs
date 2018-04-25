@@ -29,5 +29,10 @@ namespace Team_Project
          Artists = Artist.AllArtists();
         
       }
+
+      private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+      {
+
+      }
    }
 }
