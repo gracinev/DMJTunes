@@ -27,6 +27,8 @@ namespace Team_Project
             this.InitializeComponent();
         }
 
+        public Artist ActiveArtist { get; set; }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             ActiveArtist = (Artist)e.Parameter;

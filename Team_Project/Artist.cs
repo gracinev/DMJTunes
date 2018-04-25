@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
 
-namespace Moive_Databinding_G1
+namespace Team_Project
 {
     public class Artist
     {
