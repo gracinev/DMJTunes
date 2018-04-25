@@ -99,6 +99,12 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Artist.cs" />
+    <Compile Include="ArtistInfo.xaml.cs">
+      <DependentUpon>ArtistInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistPage.xaml.cs">
+      <DependentUpon>ArtistPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -118,6 +124,7 @@
     <None Include="Team_Project_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\220px-SamSmithThrillOfItAll.png" />
     <Content Include="Assets\b42799fc9d79e93c4f36253dca94fb29.jpg" />
     <Content Include="Assets\check.png" />
     <Content Include="Assets\drake-views-cover.jpg" />
@@ -131,7 +138,9 @@
     <Content Include="Assets\Mozart.jpg" />
     <Content Include="Assets\music.png" />
     <Content Include="Assets\SamSmith.jpg" />
+    <Content Include="Assets\SamSmithAlbum.jpg" />
     <Content Include="Assets\Tupac.jpg" />
+    <Content Include="Assets\tupacAlbum.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -147,6 +156,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="AlbumPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArtistInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArtistPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

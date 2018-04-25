@@ -73,12 +73,12 @@
       <HyperlinkButton Content="Views" Margin="40,0,0,0" Grid.Column="2" Grid.Row="1"
                   HorizontalAlignment="Left" FontSize="20" FontFamily="Rockwell"/>
 
-      <Image Source="assets/marianastrenchalbum.JPG" Margin="30,400,50,50"
+      <Image Source="assets/SamSmithAlbum.jpg" Margin="30,400,50,50"
             Grid.Column="1" Grid.RowSpan="5" Height="165" HorizontalAlignment="Left" />
 
-      <TextBlock Text="Mariana's Trench" Margin="220,30,0,0" Grid.Column="1" Grid.Row="2"
+      <TextBlock Text="Sam Smith" Margin="220,30,0,0" Grid.Column="1" Grid.Row="2"
                   HorizontalAlignment="Left" FontSize="30" FontFamily="Rockwell"/>
-      <HyperlinkButton Content="Astoria" Margin="40,300,250,0" Grid.Column="1" Grid.RowSpan="5"
+      <HyperlinkButton Content="Thrill of it All" Margin="40,300,250,0" Grid.Column="1" Grid.RowSpan="5"
                   HorizontalAlignment="Center" FontSize="20" FontFamily="Rockwell" VerticalAlignment="Center"
                   />
 
@@ -90,7 +90,7 @@
       <HyperlinkButton Content="The Mozart Collection" Margin="20,300,170,0" Grid.ColumnSpan="4" Grid.RowSpan="5"
                   HorizontalAlignment="Right" FontSize="20" FontFamily="Rockwell" VerticalAlignment="Center"
                   />
-
+                
       <Image Source="assets/falloutboyAlbum.jpg" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Height="170"
             Margin="30,50,0,0"/>
 
@@ -100,12 +100,14 @@
                   HorizontalAlignment="Left" FontSize="20" FontFamily="Rockwell" VerticalAlignment="Center"
                   />
 
+      <Image Source="assets/tupacAlbum.jpg" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right"
+            Height="165" Margin="0,40,0,0"/>
 
+      <TextBlock Text="Tupac" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" FontSize="30"
+            FontFamily="Rockwell" Margin="40,0,0,80"/>
 
-
-
-
-
+      <HyperlinkButton Content="All Eyes on me" Grid.Column="2" Grid.Row="4"  Margin="40,0,20,20" FontSize="20"
+            FontFamily="Rockwell"/>
 
 
 
