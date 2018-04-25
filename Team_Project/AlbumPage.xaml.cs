@@ -26,7 +26,5 @@ namespace Team_Project
       {
          this.InitializeComponent();
       }
-
-     
    }
 }
