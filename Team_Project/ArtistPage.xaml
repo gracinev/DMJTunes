@@ -13,12 +13,12 @@
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="local:Artist">
                     <StackPanel Margin="20" Orientation="Horizontal">
-                        <Image Width="100" Height="120" Source="{x:Bind Image.Source}" />
+                        <Image Width="100" Height="120" Source="{x:Bind AlbumArtwork.Source}" />
                         <StackPanel Height="120">
-                            <TextBlock Text="{x:Bind Name}" />
+                            <TextBlock Text="{x:Bind ArtistName}" />
                             <TextBlock Text="{x:Bind AlbumName}" />
                             <TextBlock Text="{x:Bind YearOnly}" />
-                            <TextBlock TextWrapping="WrapWholeWords" Text="{x:Bind Description}" />
+                            <TextBlock TextWrapping="WrapWholeWords" Text="{x:Bind AlbumDescription}" />
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
