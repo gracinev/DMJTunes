@@ -36,7 +36,7 @@ namespace Team_Project
                 return $"({Date.Year})";
             }
         }
-        public static List<Artist> AllMovies()
+        public static List<Artist> AllArtists()
         {
             Artist m = new Artist(Name: "name", AlbumName:"name2", Date: new DateTime(1, 1, 2018), Description: "des", imageFilename: "pic.jpg");
             return new List<Artist>
