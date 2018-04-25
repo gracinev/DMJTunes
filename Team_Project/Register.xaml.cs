@@ -29,6 +29,8 @@ namespace Team_Project
         {
             this.InitializeComponent();
             btnRegister.IsEnabled = false;
+            error.Visibility = Visibility.Collapsed;
+            password.IsEnabled = false;
         }
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
@@ -39,43 +41,47 @@ namespace Team_Project
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-            error.Visibility = Visibility.Collapsed;
             if (login.ValidateInfo(username.Text, password.Password) == false)
             {
                 error.Visibility = Visibility.Visible;
                 error.Text = $"{username.Text} already exists. Please try another username.";
+                password.Password = "";
+                usernameValidation.Visibility = Visibility.Collapsed;
+                passwordValidation.Visibility = Visibility.Collapsed;
+                error.Visibility = Visibility.Collapsed;
             }  
             else
             {
                 login.ValidateInfo(username.Text, password.Password);
-                username.Text = "";
-                password.Password = "";
+                usernameValidation.Visibility = Visibility.Collapsed;
+                passwordValidation.Visibility = Visibility.Collapsed;
+                error.Visibility = Visibility.Collapsed;
+               
             }
         }
 
-        private bool RegistrationValidation(string validate)
+        private bool ValidateNull(string validate)
         {
             btnRegister.IsEnabled = false;
-            if (!string.IsNullOrWhiteSpace(validate))
+            if (string.IsNullOrWhiteSpace(validate))
             {
-                return true;
+                return false;
             }
             else
             {
-                error.Visibility = Visibility.Visible;
-                error.Text = "Please enter a valid username and/or password";
-                return false;
+                return true;
             }
         }
 
         private void username_TextChanged(object sender, TextChangedEventArgs e)
         {
-            password.IsEnabled = false;
             btnRegister.IsEnabled = false;
-            if (RegistrationValidation(username.Text) == false)
+            if (ValidateNull(username.Text) == false)
             {
+                error.Visibility = Visibility.Visible;
                 usernameValidation.DisplayValidation(false);
                 error.Text = "Please enter a valid username";
+                password.IsEnabled = false;
             }
             else
             {
@@ -88,17 +94,16 @@ namespace Team_Project
         private void password_PasswordChanged(object sender, RoutedEventArgs e)
         {
             btnRegister.IsEnabled = false;
-            RegistrationValidation(password.Password);
-            if (password.Password.Length < 8 || RegistrationValidation(password.Password) == false)
+            error.Visibility = Visibility.Collapsed;
+            if (ValidateNull(password.Password) == false || password.Password.Length <= 6)
             {
                 error.Visibility = Visibility.Visible;
-                error.Text = "Enter a password that is greater than 8 characters";
                 passwordValidation.DisplayValidation(false);
+                error.Text = "Enter a password that is greater than 6 characters";
             }
             else
             {
                 passwordValidation.DisplayValidation(true);
-                error.Visibility = Visibility.Collapsed;
                 btnRegister.IsEnabled = true;
             }
         }
