@@ -99,6 +99,12 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Artist.cs" />
+    <Compile Include="ArtistInfo.xaml.cs">
+      <DependentUpon>ArtistInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistPage.xaml.cs">
+      <DependentUpon>ArtistPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -150,6 +156,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="AlbumPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArtistInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArtistPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
