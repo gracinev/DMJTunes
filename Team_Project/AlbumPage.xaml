@@ -60,10 +60,19 @@
 
          </ListView>
       </StackPanel>
-      <ListView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}">
-         
+      <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}">
+         <GridView.ItemTemplate>
+            <DataTemplate x:DataType="local:Artist">
+            <StackPanel>
+                  <Image Source="{x:Bind AlbumArtwork.Source}" Width="100" Height="120"/>
 
-      </ListView>
+               </StackPanel>
+            
+            </DataTemplate>
+            
+         </GridView.ItemTemplate>
+
+      </GridView>
 
 
    </Grid>
