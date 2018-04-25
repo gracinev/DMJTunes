@@ -105,9 +105,6 @@
     <Compile Include="ArtistPage.xaml.cs">
       <DependentUpon>ArtistPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Divide.xaml.cs">
-      <DependentUpon>Divide.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -167,10 +164,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ArtistPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Divide.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
