@@ -29,15 +29,5 @@ namespace Team_Project
          Artists = Artist.AllArtists();
         
       }
-     
-
-      
-      
-
-
-    
-      
-
-      
    }
 }
