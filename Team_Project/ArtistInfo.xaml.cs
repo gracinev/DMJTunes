@@ -22,12 +22,11 @@ namespace Team_Project
     /// </summary>
     public sealed partial class ArtistInfo : Page
     {
+        public Artist ActiveArtist { get; set; }
         public ArtistInfo()
         {
             this.InitializeComponent();
         }
-
-        public Artist ActiveArtist { get; set; }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {

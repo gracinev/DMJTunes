@@ -26,5 +26,10 @@ namespace Team_Project
       {
          this.InitializeComponent();
       }
-   }
+
+        private void ListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            MainListView.IsItemClickEnabled = false;
+        }
+    }
 }

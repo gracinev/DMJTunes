@@ -40,7 +40,7 @@
        />
       <Rectangle Fill="AntiqueWhite" Grid.RowSpan="5" />
 
-        <ListView Margin="20,64,-2673,-3141" IsItemClickEnabled="False">
+        <ListView x:Name="MainListView" Margin="20,64,-2673,-3141" ItemClick="ListView_ItemClick">
                 <ListViewItem Foreground="#3F5F6B" Content="Top Songs of 2018" FontSize="37" FontWeight="ExtraBold" />
                 <ListViewItem Foreground="#3F5F6B" Content="All the Stars" FontSize="30"/>
                 <ListViewItem Foreground="#3F5F6B" Content="Grown" FontSize="30"/>

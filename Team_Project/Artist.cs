@@ -10,30 +10,30 @@ namespace Team_Project
 {
     public class Artist
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string ArtistName { get; set; }
+        public string AlbumDescription { get; set; }
         public string AlbumName { get; set; }
-        public DateTime Date { get; set; }
-        public Image Image { get; set; }
+        public DateTime ReleaseDate { get; set; }
+        public Image AlbumArtwork { get; set; }
 
         public Artist()
         {
-            //Test comment
+
         }
         public Artist(string Name, string Description, string AlbumName, DateTime Date, string imageFilename)
         {
-            this.Name = Name;
-            this.Description = Description;
+            this.ArtistName = Name;
+            this.AlbumDescription = Description;
             this.AlbumName = AlbumName;
-            this.Date = Date;
-            Image = new Image();
-            Image.Source = new BitmapImage(new Uri($"ms-appx:///Assets/{imageFilename}", UriKind.RelativeOrAbsolute));
+            this.ReleaseDate = Date;
+            AlbumArtwork = new Image();
+            AlbumArtwork.Source = new BitmapImage(new Uri($"ms-appx:///Assets/{imageFilename}", UriKind.RelativeOrAbsolute));
         }
         public string YearOnly
         {
             get
             {
-                return $"({Date.Year})";
+                return $"({ReleaseDate.Year})";
             }
         }
         public static List<Artist> AllArtists()

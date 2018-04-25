@@ -32,10 +32,10 @@ namespace Team_Project
         {
             var artist = new Artist
             {
-                Name = "Hi",
+                ArtistName = "Hi",
                 AlbumName = "yo",
-                Description = "Blah blah blah",
-                Date = new DateTime(2016, 03, 04)
+                AlbumDescription = "Blah blah blah",
+                ReleaseDate = new DateTime(2016, 03, 04)
             };
 
             this.Frame.Navigate(typeof(Artist), artist);

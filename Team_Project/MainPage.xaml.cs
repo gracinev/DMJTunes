@@ -28,6 +28,7 @@ namespace Team_Project
             this.InitializeComponent();
             password.IsEnabled = false;
             login.IsEnabled = false;
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
