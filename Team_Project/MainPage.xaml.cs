@@ -42,11 +42,9 @@ namespace Team_Project
             {
                 if (Login.LoginInfo[username.Text] == password.Password)
                 {
-                    // Change the message dialog to page navigation!
-                    MessageDialog message = new MessageDialog($"Welcome {username.Text}!");
-                    message.ShowAsync();
                     username.Text = "";
                     password.Password = "";
+                    this.Frame.Navigate(typeof(AlbumPage));
                 }
                 else
                 {
