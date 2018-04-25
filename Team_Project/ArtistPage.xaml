@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <HyperlinkButton Click="HyperlinkButton_Click"  HorizontalAlignment="Center"  FontSize="30" Content="Zootopia" />
-        <GridView DoubleTapped="MainListView_DoubleTapped"  x:Name="MainListView" ItemsSource="{x:Bind Artist}" >
+        <GridView DoubleTapped="MainListView_DoubleTapped"  x:Name="MainListView" ItemsSource="{x:Bind Artists}" >
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="local:Artist">
                     <StackPanel Margin="20" Orientation="Horizontal">
