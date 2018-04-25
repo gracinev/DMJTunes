@@ -17,22 +17,14 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Team_Project
 {
-   /// <summary>
-   /// An empty page that can be used on its own or navigated to within a Frame.
-   /// </summary>
-   public sealed partial class AlbumPage : Page
-   {
-      public List<Artist> Artists { get; set; }
-      public AlbumPage()
-      {
-         this.InitializeComponent();
-         Artists = Artist.AllArtists();
-        
-      }
-
-      private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
-      {
-
-      }
-   }
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class Divide : Page
+    {
+        public Divide()
+        {
+            this.InitializeComponent();
+        }
+    }
 }

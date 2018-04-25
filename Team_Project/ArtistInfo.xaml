@@ -10,11 +10,11 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel>
             <HyperlinkButton Click="HyperlinkButton_Click"  Content="Back"/>
-            <TextBlock Text="{x:Bind ActiveArtist.Name}" Margin="40,40,40,0" HorizontalAlignment="Center" FontSize="30"  />
+            <TextBlock Text="{x:Bind ActiveArtist.ArtistName}" Margin="40,40,40,0" HorizontalAlignment="Center" FontSize="30"  />
             <TextBlock Text="{x:Bind ActiveArtist.AlbumName}" Margin="40,40,40,0" HorizontalAlignment="Center" FontSize="30"  />
             <TextBlock Text="{x:Bind ActiveArtist.YearOnly}"  HorizontalAlignment="Center" Margin="5" />
-            <TextBlock Margin="20" Text="{x:Bind ActiveArtist.Description}" />
-            <Image Width="100" Height="120" Source="{x:Bind ActiveArtist.Image.Source}"/>
+            <TextBlock Margin="20" Text="{x:Bind ActiveArtist.AlbumDescription}" />
+            <Image Width="100" Height="120" Source="{x:Bind ActiveArtist.AlbumArtwork.Source}"/>
         </StackPanel>
     </Grid>
 </Page>

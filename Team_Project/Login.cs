@@ -11,7 +11,7 @@ namespace Team_Project
     class Login
     {
         public static Dictionary<string, string> LoginInfo = new Dictionary<string, string>();
-        
+
         public async void WriteLoginInfoToFile(string username, string password)
         {
             StorageFolder loginInfoFolder = ApplicationData.Current.LocalFolder;
