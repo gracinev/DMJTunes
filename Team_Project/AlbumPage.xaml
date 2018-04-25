@@ -28,13 +28,13 @@
          <Image Source="Assets/Music.png" Margin="380,30,50,0"/>
          <TextBlock Text="DMJ TUNES"
                        FontSize="70"
-                       Margin="9.667,0,38.333,0"
+                       Margin="0,0,50.333,20"
                        FontFamily="Rockwell" Height="199" />
 
       </StackPanel>
       <TextBlock 
          Text="Ideal Tunes for you" Foreground="Black" 
-         FontSize="40" TextAlignment="Right" Margin="0,120,0.334,0.333"
+         FontSize="40" TextAlignment="Right" Margin="20,150,0.334,0.333"
          Grid.Row="0" FontFamily="Rockwell" Grid.ColumnSpan="2"
          
        />
@@ -60,18 +60,27 @@
 
          </ListView>
       </StackPanel>
-      <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}" DoubleTapped="album_list_view_DoubleTapped">
+      <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}" DoubleTapped="album_list_view_DoubleTapped"
+               Grid.RowSpan="4" Grid.ColumnSpan="2" >
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="local:Artist">
                     <StackPanel>
-                        <Image Source="{x:Bind AlbumArtwork.Source}" Width="100" Height="120"/>
-                        <StackPanel>
+                        <Image Source="{x:Bind AlbumArtwork.Source}" Width="150" Height="150" Margin="0,50,250,50"/>
+                        <TextBlock Text="{x:Bind ArtistName}" FontSize="20" FontFamily="Rockwell" FontWeight="Bold"/>
+                        <TextBlock Text="{x:Bind AlbumName}" FontSize="20" FontFamily="Rockwell"/>
+                  <StackPanel>
                             <TextBlock Text=""/>
                             <TextBlock Text="" />
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
+                
             </GridView.ItemTemplate>
+         <GridView.ItemsPanel>
+            <ItemsPanelTemplate>
+               <ItemsWrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal" HorizontalAlignment="Center"/>
+            </ItemsPanelTemplate>
+         </GridView.ItemsPanel>
         </GridView>
 
 
