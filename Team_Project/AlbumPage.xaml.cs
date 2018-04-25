@@ -32,7 +32,8 @@ namespace Team_Project
 
         private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
-
+            Artist a = (Artist)album_list_view.SelectedItem;
+            this.Frame.Navigate(typeof(ArtistInfo),a);
         }
     }
 }
