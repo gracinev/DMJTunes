@@ -118,6 +118,7 @@
     <None Include="Team_Project_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\220px-SamSmithThrillOfItAll.png" />
     <Content Include="Assets\b42799fc9d79e93c4f36253dca94fb29.jpg" />
     <Content Include="Assets\check.png" />
     <Content Include="Assets\drake-views-cover.jpg" />
@@ -131,7 +132,9 @@
     <Content Include="Assets\Mozart.jpg" />
     <Content Include="Assets\music.png" />
     <Content Include="Assets\SamSmith.jpg" />
+    <Content Include="Assets\SamSmithAlbum.jpg" />
     <Content Include="Assets\Tupac.jpg" />
+    <Content Include="Assets\tupacAlbum.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
