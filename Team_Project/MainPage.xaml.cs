@@ -26,6 +26,7 @@ namespace Team_Project
         public MainPage()
         {
             this.InitializeComponent();
+            password.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -62,6 +63,11 @@ namespace Team_Project
                 password.Password = "";
             }
 
+        }
+
+        private void username_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            password.IsEnabled = true;
         }
     }
 }

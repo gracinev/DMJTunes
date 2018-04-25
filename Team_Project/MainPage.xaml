@@ -9,7 +9,7 @@
 
     <Grid Background="#AEE0C5">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition  Width="300" />
             <ColumnDefinition />
             <ColumnDefinition />
             <ColumnDefinition Width="Auto" />
@@ -57,7 +57,8 @@
                  Grid.Column="1"
                  Grid.ColumnSpan="3"
                  FontSize="40"
-                 Margin="0,0,20,0" />
+                 Margin="0,0,20,0" 
+                 TextChanged="username_TextChanged"/>
         <PasswordBox x:Name="password"
                      Grid.Row="4"
                      Grid.Column="1"
