@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Team_Project
 {
-    public class Songs
+    class Songs
     {
       public string Songname { get; set; }
+
+        
+
       public Songs(string song_name)
       {
          this.Songname = song_name;
@@ -43,25 +46,9 @@ namespace Team_Project
                song_name: "Bodak Yellow"
             ),
 
-            new Songs(
-               song_name: "Happy Together"
-            ),
 
-            new Songs(
-               song_name: "Finess"
-            ),
-            
-            new Songs(
-               song_name: "No Tears Left To Cry"
-            ),
 
-            new Songs(
-               song_name: "I Like me Better"
-            ),
 
-            new Songs(
-               song_name: "Psycho"
-            )
 
          };
 
