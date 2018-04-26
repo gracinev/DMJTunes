@@ -39,6 +39,5 @@ namespace Team_Project
          Artist a = (Artist)album_list_view.SelectedItem;
          this.Frame.Navigate(typeof(ArtistInfo), a);
       }
-
-   }
+    }
 }

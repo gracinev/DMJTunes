@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Team_Project
 {
-    class Songs
+    public class Songs
     {
       public string Songname { get; set; }
-
-        public songs()
-        {
-
-        }
+        
 
       public Songs(string song_name)
       {
@@ -26,11 +22,11 @@ namespace Team_Project
          {
 
             new Songs(
-               song_name: "Hollaback girl"
+               song_name: "Hollaback Girl"
             ),
             
             new Songs(
-               song_name: "All the stars"
+               song_name: "All The Stars"
             ),
 
              new Songs(
@@ -38,7 +34,7 @@ namespace Team_Project
             ),
 
              new Songs(
-               song_name: "Shape of you"
+               song_name: "Shape of You"
             ),
 
             new Songs(
@@ -47,6 +43,26 @@ namespace Team_Project
 
              new Songs(
                song_name: "Bodak Yellow"
+            ),
+
+             new Songs(
+               song_name: "God's Plan"
+            ),
+
+             new Songs(
+               song_name: "One Love"
+            ),
+
+             new Songs(
+               song_name: "Walk It Talk It"
+            ),
+
+             new Songs(
+               song_name: "In My Blood"
+            ),
+
+             new Songs(
+               song_name: "Meant To Be"
             ),
 
 

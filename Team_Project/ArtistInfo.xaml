@@ -9,34 +9,29 @@
 
    <Grid Background="#AEE0C5">
       <Grid.ColumnDefinitions>
-         <ColumnDefinition Width="167*" />
-         <ColumnDefinition Width="362*"/>
-         <ColumnDefinition Width="471*" />
-         <ColumnDefinition Width="500"/>
-      </Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
       <Grid.RowDefinitions>
          <RowDefinition Height="250" />
-         <RowDefinition Height="323*"/>
+         <RowDefinition Height="200*"/>
          <RowDefinition Height="427*" />
       </Grid.RowDefinitions>
       <Rectangle Grid.ColumnSpan="4" Fill="#CBEAEB"/>
-      <StackPanel Orientation="Horizontal" Grid.ColumnSpan="3" >
-         <HyperlinkButton VerticalAlignment="Top" Click="HyperlinkButton_Click"  Content="Back"/>
-         <Image Source="Assets/Music.png" Margin="45"/>
-         <TextBlock Text="DMJ TUNES"
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="3" >
+            <HyperlinkButton VerticalAlignment="Top" Click="HyperlinkButton_Click"  Content="Back"/>
+            <Image Source="Assets/Music.png" Margin="45"/>
+            <TextBlock Text="DMJ TUNES"
                        FontSize="70"
                        VerticalAlignment="Center"
                        FontFamily="Rockwell" />
-      </StackPanel>
-
-      <TextBlock Grid.ColumnSpan="4" Grid.Row="2" Text="{x:Bind ActiveArtist.ArtistName}"  HorizontalAlignment="Center" FontSize="200" FontWeight="ExtraBold" FontFamily="Rockwell"
-                  Margin="0,100,0,0"/>
-      <TextBlock Grid.ColumnSpan="1" Grid.Row="1" Text="{x:Bind ActiveArtist.AlbumName}"  HorizontalAlignment="Center" FontSize="20" FontFamily="Rockwell"
-                  VerticalAlignment="Center" FontWeight="Bold"/>
-      <TextBlock Grid.Column="1" Grid.Row="2" Text="{x:Bind ActiveArtist.YearOnly}"  HorizontalAlignment="Center" Margin="83,5,83.667,5" Width="0" FontFamily="Rockwell"/>
-      <TextBlock Grid.Column="2" Grid.RowSpan="3" Margin="20,20,19.667,20" Text="{x:Bind ActiveArtist.AlbumDescription}" TextWrapping="WrapWholeWords" FontFamily="Rockwell" FontSize="25"
-               VerticalAlignment="Center"/>
-      <Image Grid.Column="1" Grid.Row="1" Source="{x:Bind ActiveArtist.AlbumArtwork.Source}" Margin="25,15,24.667,15"/>
-
-   </Grid>
+        </StackPanel>
+        <Image Source="{x:Bind ActiveArtist.AlbumArtwork.Source}" Margin="20" Grid.Row="1" Grid.RowSpan="2" Height="400" Width="400"/>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="{x:Bind ActiveArtist.ArtistName}" FontSize="40" FontWeight="ExtraBold" FontFamily="Rockwell" TextAlignment="Center" />
+            <TextBlock Text="{x:Bind ActiveArtist.AlbumName}" FontSize="30" FontFamily="Rockwell" FontWeight="Bold" TextAlignment="Center" Margin="10"/>
+            <TextBlock Text="{x:Bind ActiveArtist.YearOnly}" FontFamily="Rockwell" TextAlignment="Center"/>
+        </StackPanel>
+        <TextBlock Text="{x:Bind ActiveArtist.AlbumDescription}" TextWrapping="WrapWholeWords" FontFamily="Rockwell" FontSize="25" Grid.Row="2" Grid.Column="1" Margin="20"/>
+    </Grid>
 </Page>
