@@ -17,29 +17,28 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Team_Project
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class AlbumPage : Page
-    {
-        public List<Artist> Artists { get; set; }
-        public List<Songs> TopSongs { get; set; }
+   /// <summary>
+   /// An empty page that can be used on its own or navigated to within a Frame.
+   /// </summary>
+   public sealed partial class AlbumPage : Page
+   {
+      public List<Artist> Artists { get; set; }
+      public List<Songs> TopSongs { get; set; }
 
-        public AlbumPage()
-        {
-            this.InitializeComponent();
-            Artists = Artist.AllArtists();
-            TopSongs = Songs.list_of_songs();
+      public AlbumPage()
+      {
+         this.InitializeComponent();
+         Artists = Artist.AllArtists();
+         TopSongs = Songs.list_of_songs();
 
 
-        }
+      }
 
-        private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
-        {
-            Artist a = (Artist)album_list_view.SelectedItem;
-            this.Frame.Navigate(typeof(ArtistInfo), a);
-        }
-    }
+      private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+      {
+         Artist a = (Artist)album_list_view.SelectedItem;
+         this.Frame.Navigate(typeof(ArtistInfo), a);
+      }
 
-       
+   }
 }

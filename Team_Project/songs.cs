@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace Team_Project
 {
-    public class Songs
+    class Songs
     {
       public string Songname { get; set; }
+
+        public songs()
+        {
+
+        }
+
       public Songs(string song_name)
       {
          this.Songname = song_name;
