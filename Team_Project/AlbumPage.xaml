@@ -61,18 +61,20 @@
          </ListView>
          
       </StackPanel>-->
+        <StackPanel Orientation="Vertical" Grid.RowSpan="5">
+            <TextBlock Text="Top Songs" FontSize="40" />
+            <ListView x:Name="song_list_view" ItemsSource="{x:Bind TopSongs}">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Songs">
+                        <StackPanel>
+                            <TextBlock Text="{x:Bind Songname }" FontSize="40" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            </StackPanel>
 
-      <ListView Grid.Column="0" Grid.RowSpan="4"  >
-         <ListView.ItemTemplate>
-            <DataTemplate x:DataType="local:Songs">
-               <StackPanel>
-                  <TextBlock Text="{x:Bind Songname }" FontSize="40" />
-               </StackPanel>
-            </DataTemplate>
-         </ListView.ItemTemplate>
-      </ListView> 
-
-      <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}" DoubleTapped="album_list_view_DoubleTapped"
+            <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}" DoubleTapped="album_list_view_DoubleTapped"
                Grid.RowSpan="4" Grid.ColumnSpan="2">
          <GridView.ItemTemplate>
             <DataTemplate x:DataType="local:Artist">
