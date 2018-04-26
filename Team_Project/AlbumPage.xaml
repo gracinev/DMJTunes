@@ -62,7 +62,7 @@
          
       </StackPanel>-->
 
-      <ListView x:Name="song_list_view" Grid.Column="0" Grid.RowSpan="4" ItemsSource="{x:Bind Songs}" >
+      <ListView x:Name="song_list_view" Grid.Column="0" Grid.RowSpan="4" ItemsSource="{x:Bind Songs}">
          <ListView.ItemTemplate>
             <DataTemplate x:DataType="local:songs">
                <StackPanel>

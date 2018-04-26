@@ -113,7 +113,7 @@
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
-    <Compile Include="songs.cs" />
+    <Compile Include="Songs.cs" />
     <Compile Include="Validation.xaml.cs">
       <DependentUpon>Validation.xaml</DependentUpon>
     </Compile>
