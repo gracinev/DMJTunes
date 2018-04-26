@@ -79,7 +79,14 @@ namespace Team_Project
 
         private void password_PasswordChanged(object sender, RoutedEventArgs e)
         {
-            login.IsEnabled = true;
+            if (password.Password.Length < 1)
+            {
+                login.IsEnabled = false;
+            }
+            else
+            {
+                login.IsEnabled = true;
+            }
         }
     }
 }
