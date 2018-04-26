@@ -10,10 +10,15 @@ namespace Team_Project
     {
       public string Songname { get; set; }
 
+        public Songs()
+        {
+
+        }
 
       public Songs(string song_name)
       {
          this.Songname = song_name;
+        
       }
       public static List<Songs> list_of_songs()
       {
