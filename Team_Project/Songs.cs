@@ -43,9 +43,25 @@ namespace Team_Project
                song_name: "Bodak Yellow"
             ),
 
+            new Songs(
+               song_name: "Happy Together"
+            ),
 
+            new Songs(
+               song_name: "Finess"
+            ),
+            
+            new Songs(
+               song_name: "No Tears Left To Cry"
+            ),
 
+            new Songs(
+               song_name: "I Like me Better"
+            ),
 
+            new Songs(
+               song_name: "Psycho"
+            )
 
          };
 

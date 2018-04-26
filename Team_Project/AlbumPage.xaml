@@ -39,35 +39,14 @@
          
        />
       <Rectangle Fill="AntiqueWhite" Grid.RowSpan="5" />
-      <!--<StackPanel Grid.Column="0" Grid.RowSpan="4">
-         <ListView Margin="11,64,-1.667,-3141" Height="3509" >
-
-            <ListViewItem Foreground="#3F5F6B" Content="Top Songs of 2018" FontSize="37" FontWeight="ExtraBold" />
-            <ListViewItem Foreground="#3F5F6B" Content="All the Stars" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Grown" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Just for Us" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Party Here" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Hand It Over" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="No Tears Left to Cry" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Meant to Be" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Wake Me Up" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Whatever It Takes" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="You Make It Easy" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="God's Plan" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Ready for it" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Love Story" FontSize="30"/>
-            <ListViewItem Foreground="#3F5F6B" Content="Never Be the Same" FontSize="30"/>
-
-         </ListView>
-         
-      </StackPanel>-->
-        <StackPanel Orientation="Vertical" Grid.RowSpan="5">
-            <TextBlock Text="Top Songs" FontSize="40" />
+      
+        <StackPanel Orientation="Vertical" Grid.RowSpan="5" Margin="0,50,0,0">
+            <TextBlock Text="Top Songs" FontSize="40" FontWeight="ExtraBold" FontFamily="Rockwell"/>
             <ListView x:Name="song_list_view" ItemsSource="{x:Bind TopSongs}">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:Songs">
                         <StackPanel>
-                            <TextBlock Text="{x:Bind Songname }" FontSize="40" />
+                            <TextBlock Text="{x:Bind Songname }" FontSize="40" FontFamily="Rockwell" />
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>

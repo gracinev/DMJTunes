@@ -22,23 +22,23 @@ namespace Team_Project
    /// </summary>
    public sealed partial class AlbumPage : Page
    {
-        public List<Artist> Artists { get; set; }
-        public List<Songs> TopSongs { get; set; }
+      public List<Artist> Artists { get; set; }
+      public List<Songs> TopSongs { get; set; }
 
-        public AlbumPage()
-        {
-            this.InitializeComponent();
-            Artists = Artist.AllArtists();
-            TopSongs = Songs.list_of_songs();
-        
-        
-        }
+      public AlbumPage()
+      {
+         this.InitializeComponent();
+         Artists = Artist.AllArtists();
+         TopSongs = Songs.list_of_songs();
 
-        private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
-        {
-            Artist a = (Artist)album_list_view.SelectedItem;
-            this.Frame.Navigate(typeof(ArtistInfo),a);
-        }
 
-       
+      }
+
+      private void album_list_view_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+      {
+         Artist a = (Artist)album_list_view.SelectedItem;
+         this.Frame.Navigate(typeof(ArtistInfo), a);
+      }
+
+   }
 }
