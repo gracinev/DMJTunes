@@ -30,8 +30,9 @@
             <TextBlock Text="{x:Bind ActiveArtist.ArtistName}" Margin="40,40,40,0" HorizontalAlignment="Center" FontSize="30"  />
             <TextBlock Text="{x:Bind ActiveArtist.AlbumName}" Margin="40,40,40,0" HorizontalAlignment="Center" FontSize="30"  />
             <TextBlock Text="{x:Bind ActiveArtist.YearOnly}"  HorizontalAlignment="Center" Margin="5" />
-            <TextBlock Margin="20" Text="{x:Bind ActiveArtist.AlbumDescription}" TextWrapping="WrapWholeWords" />
             <Image Width="100" Height="120" Source="{x:Bind ActiveArtist.AlbumArtwork.Source}"/>
+            <TextBlock Margin="20" Text="{x:Bind ActiveArtist.AlbumDescription}" TextWrapping="WrapWholeWords" />
+            
         </StackPanel>
     </Grid>
 </Page>

@@ -125,13 +125,14 @@
     <None Include="Team_Project_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\220px-SamSmithThrillOfItAll.png" />
-    <Content Include="Assets\b42799fc9d79e93c4f36253dca94fb29.jpg" />
+    <Content Include="Assets\Mania.png" />
+    <Content Include="Assets\ThrillOfItAll.png" />
+    <Content Include="Assets\MozartGMinor.jpg" />
     <Content Include="Assets\check.png" />
-    <Content Include="Assets\drake-views-cover.jpg" />
+    <Content Include="Assets\Views.jpg" />
     <Content Include="Assets\Drake.png" />
     <Content Include="Assets\EdSheeran.jpg" />
-    <Content Include="Assets\edSheeranalbum.jpg" />
+    <Content Include="Assets\Divide.jpg" />
     <Content Include="Assets\error.png" />
     <Content Include="Assets\falloutboyAlbum.jpg" />
     <Content Include="Assets\FOB.jpg" />
