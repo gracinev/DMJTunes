@@ -10,6 +10,10 @@ namespace Team_Project
     {
       public string Songname { get; set; }
 
+        public songs()
+        {
+
+        }
 
       public songs(string song_name)
       {

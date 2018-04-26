@@ -22,8 +22,8 @@ namespace Team_Project
    /// </summary>
    public sealed partial class AlbumPage : Page
    {
-      public List<Artist> Artists { get; set; }
-      public AlbumPage()
+        public List<Artist> Artists { get; set; }
+        public AlbumPage()
       {
          this.InitializeComponent();
          Artists = Artist.AllArtists();
