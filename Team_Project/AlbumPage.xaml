@@ -39,7 +39,7 @@
          
        />
       <Rectangle Fill="AntiqueWhite" Grid.RowSpan="5" />
-      <StackPanel Grid.Column="0" Grid.RowSpan="4">
+      <!--<StackPanel Grid.Column="0" Grid.RowSpan="4">
          <ListView Margin="11,64,-1.667,-3141" Height="3509" >
 
             <ListViewItem Foreground="#3F5F6B" Content="Top Songs of 2018" FontSize="37" FontWeight="ExtraBold" />
@@ -59,25 +59,43 @@
             <ListViewItem Foreground="#3F5F6B" Content="Never Be the Same" FontSize="30"/>
 
          </ListView>
-      </StackPanel>
+         
+      </StackPanel>-->
+
+      <ListView x:Name="song_list_view" Grid.Column="0" Grid.RowSpan="4">
+         <ListView.ItemTemplate>
+            <DataTemplate x:DataType="local:songs">
+               <StackPanel>
+                  <TextBlock Text="{x:Bind Songname }" FontSize="40" />
+               </StackPanel>
+            </DataTemplate>
+         </ListView.ItemTemplate>
+         
+      
+      </ListView> 
+
       <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}" DoubleTapped="album_list_view_DoubleTapped"
                Grid.RowSpan="4" Grid.ColumnSpan="2">
-            <GridView.ItemTemplate>
-                <DataTemplate x:DataType="local:Artist">
-                    <StackPanel>
-                        <Image Source="{x:Bind AlbumArtwork.Source}" Width="150" Height="150" Margin="0,50,250,50" />
-                        <TextBlock Text="{x:Bind ArtistName}" FontSize="20" FontFamily="Rockwell" FontWeight="Bold"/>
-                        <TextBlock Text="{x:Bind AlbumName}" FontSize="20" FontFamily="Rockwell"/>
-                    </StackPanel>
-                </DataTemplate>
-            </GridView.ItemTemplate>
+         <GridView.ItemTemplate>
+            <DataTemplate x:DataType="local:Artist">
+               <StackPanel>
+                  <Image Source="{x:Bind AlbumArtwork.Source}" Width="150" Height="150" Margin="0,50,250,50" />
+                  <TextBlock Text="{x:Bind ArtistName}" FontSize="20" FontFamily="Rockwell" FontWeight="Bold"/>
+                  <TextBlock Text="{x:Bind AlbumName}" FontSize="20" FontFamily="Rockwell"/>
+               </StackPanel>
+            </DataTemplate>
+         </GridView.ItemTemplate>
          <GridView.ItemsPanel>
             <ItemsPanelTemplate>
                <ItemsWrapGrid MaximumRowsOrColumns="2" Orientation="Horizontal" HorizontalAlignment="Center" />
             </ItemsPanelTemplate>
          </GridView.ItemsPanel>
-        </GridView>
-
-
+      </GridView>
+   
+   
+   
+   
+   
+   
    </Grid>
 </Page>

@@ -113,6 +113,7 @@
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Compile Include="songs.cs" />
     <Compile Include="Validation.xaml.cs">
       <DependentUpon>Validation.xaml</DependentUpon>
     </Compile>
@@ -137,6 +138,7 @@
     <Content Include="Assets\marianastrenchalbum.JPG" />
     <Content Include="Assets\Mozart.jpg" />
     <Content Include="Assets\music.png" />
+    <Content Include="Assets\profilepic.png" />
     <Content Include="Assets\SamSmith.jpg" />
     <Content Include="Assets\SamSmithAlbum.jpg" />
     <Content Include="Assets\Tupac.jpg" />
