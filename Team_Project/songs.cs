@@ -6,42 +6,42 @@ using System.Threading.Tasks;
 
 namespace Team_Project
 {
-    class songs
+    class Songs
     {
       public string Songname { get; set; }
 
 
-      public songs(string song_name)
+      public Songs(string song_name)
       {
          this.Songname = song_name;
       }
-      public static List<songs> list_of_songs()
+      public static List<Songs> list_of_songs()
       {
 
-         return new List<songs>
+         return new List<Songs>
          {
 
-            new songs(
+            new Songs(
                song_name: "Hollaback girl"
             ),
             
-            new songs(
+            new Songs(
                song_name: "All the stars"
             ),
 
-             new songs(
+             new Songs(
                song_name: "Despacito"
             ),
 
-             new songs(
+             new Songs(
                song_name: "Shape of you"
             ),
 
-            new songs(
+            new Songs(
                song_name: "The Weekend"
             ),
 
-             new songs(
+             new Songs(
                song_name: "Bodak Yellow"
             ),
 

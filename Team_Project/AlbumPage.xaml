@@ -62,16 +62,14 @@
          
       </StackPanel>-->
 
-      <ListView x:Name="song_list_view" Grid.Column="0" Grid.RowSpan="4" ItemsSource="{x:Bind Songs}">
+      <ListView x:Name="song_list_view" Grid.Column="0" Grid.RowSpan="4" >
          <ListView.ItemTemplate>
-            <DataTemplate x:DataType="local:songs">
+            <DataTemplate x:DataType="local:Songs">
                <StackPanel>
                   <TextBlock Text="{x:Bind Songname }" FontSize="40" />
                </StackPanel>
             </DataTemplate>
          </ListView.ItemTemplate>
-         
-      
       </ListView> 
 
       <GridView x:Name="album_list_view" Grid.Column="1" Grid.Row="1" ItemsSource="{x:Bind Artists}" DoubleTapped="album_list_view_DoubleTapped"
