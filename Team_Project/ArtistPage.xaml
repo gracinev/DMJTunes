@@ -7,19 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#AEE0C5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
         <HyperlinkButton Click="HyperlinkButton_Click"  HorizontalAlignment="Center"  FontSize="30" Content="Thriller" />
-        <GridView DoubleTapped="MainListView_DoubleTapped"  x:Name="MainListView" ItemsSource="{x:Bind Artists}" >
+        <Rectangle Grid.ColumnSpan="3" Fill="#CBEAEB"/>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="3" >
+            <Image Source="Assets/Music.png" Margin="45"/>
+            <TextBlock Text="DMJ TUNES"
+                       FontSize="70"
+                       VerticalAlignment="Center"
+                       FontFamily="Rockwell" />
+        </StackPanel>
+        <GridView DoubleTapped="MainListView_DoubleTapped"  x:Name="MainListView" ItemsSource="{x:Bind Artists}" Grid.Column="1" Grid.Row="1" >
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="local:Artist">
-                    <StackPanel Margin="20" Orientation="Horizontal">
-                        <Image Width="100" Height="120" Source="{x:Bind AlbumArtwork.Source}" />
-                        <StackPanel Height="120">
+                    <StackPanel Height="120">
+                            <Image Width="100" Height="120" Source="{x:Bind AlbumArtwork.Source}" />
                             <TextBlock Text="{x:Bind ArtistName}" />
                             <TextBlock Text="{x:Bind AlbumName}" />
                             <TextBlock Text="{x:Bind YearOnly}" />
-                            <TextBlock TextWrapping="WrapWholeWords" Text="{x:Bind AlbumDescription}" />
-                        </StackPanel>
+                        <TextBlock TextWrapping="WrapWholeWords" Text="{x:Bind AlbumDescription}" />
                     </StackPanel>
                 </DataTemplate>
             </GridView.ItemTemplate>
