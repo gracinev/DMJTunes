@@ -42,11 +42,11 @@
 
         <StackPanel Orientation="Vertical" Grid.RowSpan="5">
             <TextBlock Text="Top Songs" FontSize="40" Margin="10" FontWeight="SemiBold"/>
-            <ListView x:Name="song_list_view" ItemsSource="{x:Bind TopSongs}" IsItemClickEnabled="False">
+            <ListView x:Name="song_list_view" ItemsSource="{x:Bind TopSongs}" IsItemClickEnabled="False" IsDoubleTapEnabled="False">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:Songs">
                         <StackPanel>
-                            <TextBlock Text="{x:Bind Songname }" FontSize="40" />
+                            <TextBlock Text="{x:Bind Songname }" FontSize="40"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
